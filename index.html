@@ -192,7 +192,46 @@
   .family-heading{ font-size:23px; color:var(--sage-deep); font-weight:600; }
   .family-heading em{ display:block; font-style:italic; font-size:14px; color:var(--gold-deep); font-weight:500; margin-top:6px; }
   .family-msg{ margin-top:18px; font-size:17px; color:var(--ink-soft); line-height:1.9; }
-
+  
+    /* ---- structured invitation text ---- */
+  .invite-text{ margin-top:26px; }
+  .line-block{ margin:0 auto; max-width:340px; }
+  .line-block + .line-block{ margin-top:26px; }
+ 
+  .invite-lead{ font-size:14px; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--gold-deep); font-weight:600; margin-bottom:14px; }
+ 
+  .invite-body{ font-size:17px; line-height:2; color:var(--ink-soft); margin:0; }
+ 
+  .invite-couple{ font-family:'Mrs Saint Delafield', cursive; font-size:clamp(40px,11vw,54px);
+    line-height:1.2; color:var(--ink); margin-top:16px; }
+  .invite-engaged{ font-size:17px; font-style:italic; color:var(--sage-deep); margin-top:4px; }
+ 
+  .invite-parents{ margin-top:14px; }
+  .invite-parents .pname{ font-size:18px; color:var(--ink); font-weight:600; line-height:1.6; }
+  .invite-parents .prel{ font-size:14px; font-style:italic; color:var(--gold-deep); margin-top:2px; }
+  .invite-parents .pgap{ height:18px; }
+ 
+  .invite-close{ font-size:18px; font-style:italic; line-height:1.9; color:var(--ink); margin:0; }
+ 
+  .mini-rule{ width:56px; height:1px; margin:24px auto;
+    background:linear-gradient(90deg, transparent, var(--gold), transparent); }
+ 
+  /* invitation text — structured lines */
+  .invite-text{ margin-top:22px; }
+  .invite-text .line-block{ margin-top:22px; }
+  .invite-text .line-block:first-child{ margin-top:0; }
+  .invite-lead{ font-size:14px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-deep); font-weight:600; }
+  .invite-body{ font-size:17px; color:var(--ink-soft); line-height:1.85; max-width:340px; margin:10px auto 0; }
+  .invite-couple{ font-family:'Mrs Saint Delafield', cursive; font-size:clamp(38px,11vw,52px); color:var(--sage-deep); line-height:1.2; margin-top:6px; }
+  .invite-engaged{ font-size:17px; color:var(--ink-soft); font-style:italic; margin-top:2px; }
+  .invite-parents{ margin-top:8px; }
+  .invite-parents .pname{ font-size:17px; color:var(--ink); font-weight:600; line-height:1.5; }
+  .invite-parents .prel{ font-size:14px; color:var(--gold-deep); font-style:italic; margin-top:2px; }
+  .invite-parents .pgap{ height:16px; }
+  .invite-close{ font-size:17px; color:var(--ink-soft); font-style:italic; max-width:320px; margin:0 auto; }
+  .mini-rule{ height:1px; width:60px; margin:20px auto; background:linear-gradient(90deg, transparent, var(--gold), transparent); }
+  
   /* ================= CLOSING ================= */
   .closing p.thanks{ font-size:20px; font-style:italic; color:var(--ink); max-width:320px; margin:0 auto; }
   .monogram-wrap{ position:relative; width:120px; height:120px; margin:38px auto 12px; }
@@ -261,7 +300,7 @@
     It will appear below the monogram in the hero. If you don't add one,
     a decorative floral placeholder is shown instead — so nothing looks broken.
   -->
-  <audio id="bgm" loop preload="none">
+  <audio id="bgm" loop preload="auto">
     <source src="aaj-sajya-hai-ve-sara-shehar.mp3" type="audio/mpeg">
   </audio>
 
